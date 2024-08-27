@@ -3870,7 +3870,7 @@ static_inline Uint32 getPixel(SDL_Surface *Surface, int x, int y)
     return 0;  // FIXME: Handle errors better
 }
 
-static GPU_Image* CopyImageFromSurface(GPU_Renderer* renderer, SDL_Surface* surface, const GPU_Rect* surface_rect)
+static GPU_Image* CopyImageFromSurface(GPU_Renderer* renderer, SDL_Surface* surface, GPU_Rect* surface_rect)
 {
     GPU_FormatEnum format;
     GPU_Image* image;
